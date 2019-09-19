@@ -24,7 +24,9 @@ The nf-core/ownpipeline pipeline comes with documentation about the pipeline, fo
 4. [Output and how to interpret the results](docs/output.md)
 5. [Troubleshooting](https://nf-co.re/usage/troubleshooting)
 
-<!-- TODO nf-core: Add a brief overview of what the pipeline does and how it works -->
+Overview
+
+This pipeline is for creating nextflow pipelines.
 
 ## Credits
 nf-core/ownpipeline was originally written by RobertHerczeg.
