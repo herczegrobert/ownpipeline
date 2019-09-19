@@ -270,7 +270,23 @@ process output_documentation {
     """
 }
 
+/*
+ * STEP 4 - Output Description HTML modified by Robert Herczeg
+ */
+process output_documentation {
+    publishDir "${params.outdir}/pipeline_info", mode: 'copy'
 
+    input:
+    file output_docs from ch_output_docs
+
+    output:
+    file "results_description.html"
+
+    script:
+    """
+    markdown_to_html.r $output_docs results_description.html
+    """
+}
 
 /*
  * Completion e-mail notification
